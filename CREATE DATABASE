@@ -1,0 +1,16 @@
+CREATE DATABASE `vtiger` 
+DEFAULT CHARACTER SET  utf8 COLLATE utf8_general_ci;
+
+CREATE USER `vtigerhome`@`localhost`;
+CREATE USER `vtigerhome`@`127.0.0.1`;
+CREATE USER `vtigethome`@`::1`;
+
+SET PASSWORD
+FOR `vtigerhome`@`localhost` = PASSWORD(`n3tw0rks`);
+SET PASSWORD
+FOR `vtigerhome`@`127.0.0.1` = PASSWORD(`n3tw0rks`);
+SET PASSWORD
+FOR `vtigerhome`@`::1` = PASSWORD(`n3tw0rks`);
+
+GRANT ALL PRIVILEGES ON
+`vtiger`.* TO `vtigerhome`@`localhost
