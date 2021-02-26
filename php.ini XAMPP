@@ -3,3 +3,7 @@ memory_limit (min. 256MB)
 max_execution_time (min. 60 seconds)
 display_errors = OFF
 short_open_tag = OFF
+
+HABILITAR 
+
+extension=imap
